@@ -251,7 +251,7 @@
 // A single Z stepper driver is usually used to drive 2 stepper motors.
 // Uncomment this option to use a separate stepper driver for each Z axis motor.
 // The next unused E driver will be assigned to the second Z stepper.
-//#define Z_DUAL_STEPPER_DRIVERS
+#define Z_DUAL_STEPPER_DRIVERS
 
 #if ENABLED(Z_DUAL_STEPPER_DRIVERS)
 
@@ -403,7 +403,7 @@
 // @section lcd
 
 // Include a page of printer information in the LCD Main Menu
-//#define LCD_INFO_MENU
+#define LCD_INFO_MENU
 
 #if ENABLED(SDSUPPORT)
 
@@ -423,7 +423,7 @@
   //#define MENU_ADDAUTOSTART
 
   // Show a progress bar on HD44780 LCDs for SD printing
-  //#define LCD_PROGRESS_BAR
+  #define LCD_PROGRESS_BAR
 
   #if ENABLED(LCD_PROGRESS_BAR)
     // Amount of time (ms) to show the bar
@@ -437,12 +437,12 @@
   #endif
 
   // This allows hosts to request long names for files and folders with M33
-  //#define LONG_FILENAME_HOST_SUPPORT
+  #define LONG_FILENAME_HOST_SUPPORT
 
   // This option allows you to abort SD printing when any endstop is triggered.
   // This feature must be enabled with "M540 S1" or from the LCD menu.
   // To have any effect, endstops must be enabled during SD printing.
-  //#define ABORT_ON_ENDSTOP_HIT_FEATURE_ENABLED
+  #define ABORT_ON_ENDSTOP_HIT_FEATURE_ENABLED
 
 #endif // SDSUPPORT
 
